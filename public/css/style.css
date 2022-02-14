@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.bold {
+  font-weight: 70;
+  color: red;
+}
+
+#sign_in_form,
+#new_room_form {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#sign_in_form input,
+#new_room_form input {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 110px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+#sign_in_form input::-moz-selection,
+#new_room_form input::-moz-selection {
+  background: red;
+}
+
+#sign_in_form input::selection,
+#new_room_form input::selection {
+  background: red;
+}
+
+#new_room_form input {
+  color: #fff;
+  background: #6377d1;
+}
+
+#new_room_form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#new_room_form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+#new_room_form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+#new_room_form input::placeholder {
+  color: #fff;
+}
+
+#messages {
+  display: none;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#messages li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  margin-bottom: 3px;
+}
+
+#room_info {
+  display: none;
+}
+
+#room_info h3 {
+  font-size: 30px;
+  color: #444;
+}
+
+#room_info p {
+  font-weight: 500;
+  color: #666;
+}
+
+#room_info ul {
+  padding: 0;
+  margin: 0;
+  width: 450px;
+  max-width: 100%;
+  display: inline-block;
+}
+
+#room_info ul li {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 4px;
+  background: #f9f9f9;
+  margin-bottom: 3px;
+}
+
+#chatFrom {
+  display: none;
+}
+
+#chatFrom input {
+  height: 50px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
