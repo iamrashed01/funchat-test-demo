@@ -59,6 +59,13 @@ chatFrom.addEventListener("submit", function (e) {
   e.preventDefault();
   if (chatFrom__input.value) {
     chatMessage(user_name, current_room, chatFrom__input.value);
+    // add own meesage to the list
+    const item = document.createElement("li");
+    item.textContent = chatFrom__input.value;
+    messages.appendChild(item);
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // clear the input
     chatFrom__input.value = "";
   }
 });

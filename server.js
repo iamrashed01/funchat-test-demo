@@ -8,7 +8,7 @@ const io = new Server(server);
 
 const users = [];
 
-app.use("/assets", express.static(path.join(__dirname, "public")));
+app.use("/assets", express.static(path.join(__dirname, "assets")));
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
